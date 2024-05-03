@@ -5,7 +5,9 @@ from modelos.cardapio.prato import Prato
 
 restaurante_praca = Restaurante('praça', 'Gourmet')
 bebida_suco = Bebida('Melancia', 5, 'grande')
+bebida_suco.aplicar_desconto()
 prato_paozinho = Prato('Pãozinho', 2, 'Pão com queijo')
+prato_paozinho.aplicar_desconto()
 restaurante_praca.adicionar_no_cardapio(bebida_suco)
 restaurante_praca.adicionar_no_cardapio(prato_paozinho)
 
